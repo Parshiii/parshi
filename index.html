@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parshi-Home</title>
+   
+
+</head>
+<style>
+    
+    
+        * {border: 1px solid red}
+      
+        .butterfly img{
+            margin: 0;
+            width: 200px;
+            
+           animation: butterfly 10s linear infinite;
+        }
+        @keyframes butterfly{
+            0%{
+                transform: (0);
+                opacity: 0;
+            }
+            50%{
+                
+                opacity: 1;
+            }
+            70%{
+                
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+        .butterfly img:nth-child(1){
+            animation-delay: 3s; width: 300px;
+        }
+        .butterfly img:nth-child(2){
+            animation-delay: 5s;
+        }
+        .butterfly img:nth-child(3){
+            animation-delay: 1s; 
+        }
+        .butterfly img:nth-child(4){
+            animation-delay: 7s; width: 250px;
+        }
+        .butterfly img:nth-child(5){
+            animation-delay: 8s;
+        }
+        .butterfly img:nth-child(6){
+            animation-delay: 2s;
+        }
+
+        .butterfly img:nth-child(7){
+            animation-delay: 6s; width: 300px;
+        }
+        .butterfly img:nth-child(8){
+            animation-delay: 4s;
+        }
+        .butterfly img:nth-child(9){
+            animation-delay: 1s; width: 300px;
+        }
+        .butterfly{
+            width:50px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            
+        }
+    
+    #image {
+            /* for the location (bottom left) */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            /* dimension for the image */
+            width: 800px;
+            height: 670px;
+            /* background image(uniform resource locator) */
+            background: url(/images/Screen\ Shot\ 2020-01-06\ at\ 3.44.03\ PM.png);
+            background-size: cover;
+        }
+    html {
+            background-color: #d0d5d8;
+            width: 100%;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+    }
+    li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    #menu {
+            /* positioning to top right */
+            position: fixed;
+            top: 20px;
+            right: 80px;
+            color: white;
+    }
+     #main {
+            color: white;
+            position: fixed;
+            top:35vh;
+            left: 47vw;
+        }
+        #main h1 {
+            /* 1em(M) means 16px */
+            font-size: 42px;
+            line-height: 0px;
+            
+
+        }
+        #main p {
+            /* 1em(M) means 16px */
+            padding-top:0 ;
+            font-size: 32px;
+            font-weight: 900;
+
+        }
+        .button {
+            /* Change the position based on its positioned parents */
+            display: none;
+            position: absolute;
+            top: 200px;
+            width: 150px;
+            height: 50px;
+            line-height: 30px;
+            font-size: 1em;
+            background-color: #C6BED9;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 50px;
+        }
+        #logo {
+            position:fixed ;
+            top: 20px;
+            left:2em;
+           width: 400px;
+            height:50px;
+        display:flex;
+           
+
+        }
+        #logo h1{
+            position:relative;
+            top:-20px;
+            left:10px;
+            color:white;
+        }
+        .small_logo{
+            width:100px;
+
+        }
+        @media (max-width: 1024px){
+            #menu {
+            /* positioning to top right */
+            position: fixed;
+            top:70px;
+            left: 2em;
+            color: white;
+    }
+    #image {
+            /* for the location (bottom left) */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            /* dimension for the image */
+            width: 100%;
+            height: 80%;
+            /* background image(uniform resource locator) */
+            background: url(/images/Screen\ Shot\ 2020-01-06\ at\ 3.44.03\ PM.png);
+            background-size: cover;
+        }
+        #main {
+            color: white;
+            position: relative;
+            top:200px;
+            left: 25vw;
+        }
+       
+        @media (max-width: 414px){
+            #image {
+            /* for the location (bottom left) */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            /* dimension for the image */
+            width:100%;
+            height: 600px;
+            /* background image(uniform resource locator) */
+            background: url(/images/Screen\ Shot\ 2020-01-06\ at\ 3.44.03\ PM.png);
+            background-size: cover;
+        }
+            #logo h1{
+            position:relative;
+            top:-10px;
+            left:10px;
+            color:white;
+            font-size: 20px;
+        }
+            #logo {
+            position:fixed ;
+            top: 20px;
+            left:2em;
+           width: 250px;
+            height:40px;
+        display:flex;
+        }
+            li {
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 18px;
+            color: white;
+           
+        }
+            #menu {
+            /* positioning to top right */
+            position: fixed;
+            top: 4em;
+            left: 1em;;
+            color: white;
+    }
+    #main{
+        position: relative;
+        top: -10vh;
+        left: 10vw;
+
+    }
+    #main h1{
+        font-size: 20px;
+    }
+    #main p{
+       font-size:1em;
+       position:relative;
+       top:40px;
+    }
+        .h1 {
+            position:relative;
+            top:-50px;
+            left:20px;
+            color:white;
+            font-size: 24px;
+        }  
+        #main .middle{
+            font-size: 25px;
+        }
+
+        }
+
+}
+        
+   
+</style>
+
+<body>
+    
+    <div id="image">
+    <div id= "logo"> <img src="/images/400dpiLogoCropped copy.jpg"  class="small_logo" alt=""><h1>Parshi Design</h1></div >
+
+    <div id="menu">
+        <!-- unordered list is the father of lists-->
+        <ul>
+            <!-- list (kids)-->
+            <a href="/Gallery.html"><li>Gallery</li></a>
+           <a href="/about.html"><li>About us</li></a> 
+            
+        </ul>
+    </div>
+    <div id="main">
+        <h1>Welcome To Parshi Design Gallery</h1>
+        <p class="middle">We Design Dreams</p>
+        <a href="/Gallery.html"><p class="button">Gallery</p></a>
+    </div>
+    <div class="butterfly">
+        <img src="/images/Untitled_Artwork.png"> 
+        <img src="/images/Untitled_Artwork 2.png">
+        <img src="/images/Untitled_Artwork 3.png">
+        <img src="/images/Untitled_Artwork 4.png">
+        <img src="/images/Untitled_Artwork 5.png">
+        <img src="/images/Untitled_Artwork.png"> 
+        <img src="/images/Untitled_Artwork 2.png">
+        <img src="/images/Untitled_Artwork 4.png">
+        <img src="/images/Untitled_Artwork 5.png">
+        
+    </div>
+    
+</body>
+</html>
